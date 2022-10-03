@@ -23,7 +23,8 @@ class ThreadWithReturnValue(Thread):
 
 
 def get_links_for_movies():
-    chrome = webdriver.Chrome(executable_path=r"C:\code\KevinBacon\chromed2river.exe")
+
+    chrome = webdriver.Chrome(executable_path=r"C:\code\KevinBacon\chromedriver.exe")
     chrome.get("http://www.imdb.com/name/nm0000158")
     chrome.find_element_by_id("show-actor").click()
     filmography = chrome.find_element_by_id("filmography")
