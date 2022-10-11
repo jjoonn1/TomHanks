@@ -26,6 +26,17 @@ def get_links_for_movies():
     chrome = webdriver.Chrome(executable_path=r"C:\code\KevinBacon\chromedriver.exe")
     chrome.get("http://www.imdb.com/name/nm0000158")
     chrome.find_element_by_id("show-actor").click()
+    print('a')
+    print('a')
+    print('a')
+    print('a')
+    print('a')
+    print('a')
+    print('a')
+    print('a')
+    print('a')
+    print('a')
+    print('a')
     filmography = chrome.find_element_by_id("filmography")
     actor_filmography = filmography.find_element_by_xpath("//div[@id='filmo-head-actor']/following-sibling::div")
     films = actor_filmography.find_elements_by_xpath(".//b")
@@ -40,6 +51,7 @@ def get_links_for_movies():
 
 
 def get_cast(movie_link):
+    print('hello')
     webpage = urllib.urlopen(movie_link)
     htmlpage = bs4.BeautifulSoup(webpage, features='html.parser')
     full_cast_suffix = htmlpage.find(id="titleCast").find("div", {"class": "see-more"}).find("a").get("href")
@@ -72,6 +84,8 @@ def get_num_of_oscars(href):
 
 def run_thread_on_subdict(subhref):
     print "entered thread"
+    print "hiiiiiii"
+    print "hello"
     subset_of_actors = {}
     i = 1
     for name, href in subhref.items():
