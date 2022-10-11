@@ -51,6 +51,7 @@ def get_links_for_movies():
 
 
 def get_cast(movie_link):
+    print('hello')
     webpage = urllib.urlopen(movie_link)
     htmlpage = bs4.BeautifulSoup(webpage, features='html.parser')
     full_cast_suffix = htmlpage.find(id="titleCast").find("div", {"class": "see-more"}).find("a").get("href")
