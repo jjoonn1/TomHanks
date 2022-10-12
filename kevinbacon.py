@@ -83,6 +83,11 @@ def get_num_of_oscars(href):
 
 def run_thread_on_subdict(subhref):
     print "entered thread"
+    print "a"
+    print "a"
+    print "a"
+    print "a"
+    print "a"
     subset_of_actors = {}
     i = 1
     for name, href in subhref.items():
