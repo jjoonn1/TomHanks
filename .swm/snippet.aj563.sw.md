@@ -2,10 +2,31 @@
 id: aj563
 name: snippet
 file_version: 1.0.2
-app_version: 0.9.7-2
+app_version: 0.9.7-1
+file_blobs:
+  kevinbacon.py: e1eebd3d1c5c65ed1556683b155a10a172c60efe
 ---
 
-sdassa
+fsdfsdfdsfds
+<!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
+### 📄 kevinbacon.py
+```python
+⬜ 70         return [int(word) for word in awards.split() if word.isdigit()][0]
+⬜ 71     
+⬜ 72     
+🟩 73     def run_thread_on_subdict(subhref):
+🟩 74         print "entered thread"
+🟩 75         subset_of_actors = {}
+🟩 76         i = 1
+🟩 77         for name, href in subhref.items():
+🟩 78             print "movie #{}. {}".format(i, name)
+🟩 79             subset_of_actors.update(get_cast(href))
+🟩 80             i += 1
+🟩 81         return subset_of_actors
+⬜ 82     
+⬜ 83     
+⬜ 84     if __name__ == "__main__":
+```
 
 <br/>
 
