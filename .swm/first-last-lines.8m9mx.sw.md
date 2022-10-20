@@ -4,20 +4,34 @@ name: first & last lines
 file_version: 1.0.2
 app_version: 0.9.8-0
 file_blobs:
-  kevinbacon.py: e1eebd3d1c5c65ed1556683b155a10a172c60efe
+  kevinbacon.py: c2e09f53c57fecfaa821ffc67105149c1e1c7dd0
 ---
 
 last
 <!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
 ### 📄 kevinbacon.py
 ```python
-⬜ 97         actors_alongside = sorted(actors_alongside.items(), key=operator.itemgetter(1))
-⬜ 98         with open(r"C:\code\KevinBacon\product.txt", "w") as product:
-⬜ 99             json.dump(actors_alongside, product)
-🟩 100        print "done"
-🟩 101    
+⬜ 98         actors_alongside = sorted(actors_alongside.items(), key=operator.itemgetter(1))
+⬜ 99         with open(r"C:\code\KevinBacon\product.txt", "w") as product:
+⬜ 100            json.dump(actors_alongside, product)
+🟩 101        print "done"
 🟩 102    
 🟩 103    
+🟩 104    
+```
+
+<br/>
+
+first
+<!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
+### 📄 kevinbacon.py
+```python
+🟩 1      
+🟩 2      import urllib
+🟩 3      import bs4
+⬜ 4      from selenium import webdriver
+⬜ 5      import operator
+⬜ 6      import json
 ```
 
 <br/>
