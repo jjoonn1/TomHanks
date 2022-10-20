@@ -97,7 +97,7 @@ if __name__ == "__main__":
     actors_alongside = sorted(actors_alongside.items(), key=operator.itemgetter(1))
     with open(r"C:\code\KevinBacon\product.txt", "w") as product:
         json.dump(actors_alongside, product)
-    print "donse"
+    print "done"
     print"dsds"
 
 
