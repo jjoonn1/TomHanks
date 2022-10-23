@@ -2,9 +2,9 @@
 id: aj563
 name: snippet
 file_version: 1.0.2
-app_version: 0.9.7-1
+app_version: 0.9.7-2
 file_blobs:
-  kevinbacon.py: e1eebd3d1c5c65ed1556683b155a10a172c60efe
+  kevinbacon.py: abbca76f4948e7a260136ef340b1ae052257f5cf
 ---
 
 fsdfsdfdsfds
@@ -16,16 +16,21 @@ fsdfsdfdsfds
 ⬜ 72     
 🟩 73     def run_thread_on_subdict(subhref):
 🟩 74         print "entered thread"
-🟩 75         subset_of_actors = {}
-🟩 76         i = 1
-🟩 77         for name, href in subhref.items():
-🟩 78             print "movie #{}. {}".format(i, name)
-🟩 79             subset_of_actors.update(get_cast(href))
-🟩 80             i += 1
-🟩 81         return subset_of_actors
-⬜ 82     
-⬜ 83     
-⬜ 84     if __name__ == "__main__":
+🟩 75         print "a"
+🟩 76         print "a"
+🟩 77         print "a"
+🟩 78         print "a"
+🟩 79         print "a"
+🟩 80         subset_of_actors = {}
+🟩 81         i = 1
+🟩 82         for name, href in subhref.items():
+🟩 83             print "movie #{}. {}".format(i, name)
+🟩 84             subset_of_actors.update(get_cast(href))
+🟩 85             i += 1
+🟩 86         return subset_of_actors
+⬜ 87     
+⬜ 88     
+⬜ 89     if __name__ == "__main__":
 ```
 
 <br/>
