@@ -1,5 +1,6 @@
 
-import urllib
+import urlliba
+import hello
 import bs4
 from selenium import webdriver
 import operator
@@ -68,8 +69,6 @@ def get_num_of_oscars(href):
         return 0
     if 'oscar' not in awards.lower() or "won" not in awards.lower():
         return 0
-    return [int(word) for word in awards.split() if word.isdigit()][0]
-
 
 def run_thread_on_subdict(subhref):
     print "entered thread"
@@ -99,5 +98,6 @@ if __name__ == "__main__":
     with open(r"C:\code\KevinBacon\product.txt", "w") as product:
         json.dump(actors_alongside, product)
     print "done"
+    print"dsds"
 
 
