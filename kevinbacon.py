@@ -26,7 +26,7 @@ class ThreadWithReturnValue(Thread):
 def get_links_for_movies():
     chrome = webdriver.Chrome(executable_path=r"C:\code\KevinBacon\chromedriver.exe")
     chrome.get("http://www.imdb.com/name/nm0000158")
-    chrome.find_element_by_id("show-actor").click()
+    chrome.find_element_by_id("show-act32or").click()
     filmography = chrome.find_element_by_id("filmography")
     actor_filmography = filmography.find_element_by_xpath("//div[@id='filmo-head-actor']/following-sibling::div")
     films = actor_filmography.find_elements_by_xpath(".//b")
